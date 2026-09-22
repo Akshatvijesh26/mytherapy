@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">My Therapy</string>
+    <string name="title_login">Welcome to My Therapy</string>
+    <string name="subtitle_login">Welcome to your safe space</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Log In</string>
+    <string name="btn_goto_register">New here? Create an Account</string>
+    <string name="title_create_account">Create Account</string>
+    <string name="subtitle_create_account">Begin your therapy journey with us</string>
+    <string name="hint_name">Full Name</string>
+    <string name="hint_age">Age</string>
+    <string name="hint_gender">Gender</string>
+    <string name="btn_register">Create Account</string>
+    <string name="btn_goto_login">Already have an account? Log in</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="btn_logout">Log Out</string>
+    <string name="title_add_medicine">Add Medicine</string>
+    <string name="title_edit_profile">Edit Profile</string>
+    <string name="hint_medicine_name">Medicine Name</string>
+    <string name="hint_frequency">Frequency per day</string>
+    <string name="hint_time_slots">Time Slots</string>
+    <string name="hint_timing_relation">Timing Relation</string>
+    <string name="hint_reminder_time">Reminder Time</string>
+    <string name="btn_save_medicine">Save Medicine</string>
+    <string name="btn_save_profile">Update Details</string>
+    <string name="btn_update_details">Update Details</string>
+    <string name="ongoing_medicines">Ongoing Medicines</string>
+    <string name="passed_medicines">Passed Medicines</string>
+</resources>

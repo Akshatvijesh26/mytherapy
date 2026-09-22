@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp">
+
+    <!-- Time slot / dose label -->
+    <LinearLayout
+        android:id="@+id/layout_dose_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:id="@+id/tv_dose_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/on_surface"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="Morning Dose" />
+
+        <ImageView
+            android:id="@+id/iv_edit_label"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="6dp"
+            android:src="@drawable/ic_edit"
+            app:tint="@color/on_surface_variant"
+            android:contentDescription="Rename dose" />
+    </LinearLayout>
+
+    <!-- Button to pick customizable time -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_dose_time"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        app:cornerRadius="22dp"
+        app:icon="@drawable/ic_time"
+        app:iconTint="@color/primary"
+        app:iconPadding="6dp"
+        android:textColor="@color/primary"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:text="08:00 AM" />
+
+    <!-- Delete button (visible when extra customized dose times exist) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_remove_dose_time"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:visibility="gone"
+        app:icon="@drawable/ic_delete"
+        app:iconTint="@color/error"
+        android:contentDescription="Remove dose time" />
+</LinearLayout>

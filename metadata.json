@@ -1,0 +1,8 @@
+{
+  "name": "Remix My Therapy",
+  "description": "Mental wellness and therapy companion application featuring secure user accounts, authentication, registration, and personalized dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
