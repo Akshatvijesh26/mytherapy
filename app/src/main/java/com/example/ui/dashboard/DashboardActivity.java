@@ -301,7 +301,19 @@ public class DashboardActivity extends AppCompatActivity {
     private void loadMedicines() {
         if (medicineRepository == null) return;
 
-        long userId = (currentUser != null) ? currentUser.getId() : 0;
+        if (currentUser == null || currentUser.getId() <= 0) {
+            ongoingAdapter.setItems(new ArrayList<>());
+            passedAdapter.setItems(new ArrayList<>());
+            binding.tvOngoingCount.setText("0");
+            binding.tvPassedCount.setText("0");
+            binding.rvOngoingMedicines.setVisibility(View.GONE);
+            binding.layoutEmptyOngoing.setVisibility(View.VISIBLE);
+            binding.rvPassedMedicines.setVisibility(View.GONE);
+            binding.layoutEmptyPassed.setVisibility(View.VISIBLE);
+            return;
+        }
+
+        long userId = currentUser.getId();
 
         // Fetch ongoing medicines
         medicineRepository.getOngoingMedicines(userId, new MedicineRepository.Callback<List<Medicine>>() {
